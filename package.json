@@ -27,5 +27,34 @@
     },
     "peerDependencies": {
         "whatwg-url": "7.1.0"
+    },
+    "agentConfig": {
+        "pluginType": "elizaos:client:1.0.0",
+        "pluginParameters": {
+            "SQUID_SDK_URL": {
+                "type": "string",
+                "minLength": 1,
+                "description": "URL for the Squid SDK API. Default: https://apiplus.squidrouter.com",
+                "optional": false
+            },
+            "SQUID_INTEGRATOR_ID": {
+                "type": "string",
+                "minLength": 1,
+                "description": "Integrator ID obtained through Squid Router documentation.",
+                "optional": false
+            },
+            "SQUID_EVM_ADDRESS": {
+                "type": "string",
+                "minLength": 1,
+                "description": "EVM blockchain address for the Squid Router.",
+                "optional": false
+            },
+            "SQUID_EVM_PRIVATE_KEY": {
+                "type": "string",
+                "minLength": 1,
+                "description": "Private key for the EVM blockchain address.",
+                "optional": false
+            }
+        }
     }
 }
